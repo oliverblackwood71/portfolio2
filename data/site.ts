@@ -94,7 +94,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     label: "Medium",
-    href: "https://medium.com/@example",
+    href: "https://medium.com/@oliver_wood",
     note: "English writing archive",
   },
   {
@@ -183,7 +183,7 @@ export const portfolioItems: PortfolioItem[] = [
     medium: "Medium",
     summary:
       "複数のAI検索ツールを、用途別に比較した英語記事。機能差だけでなく、読者タイプ別に整理。",
-    externalUrl: "https://medium.com/@example/ai-search-comparison",
+    externalUrl: "https://medium.com/@oliver_wood/ai-search-comparison",
     thumbnail: "/portfolio/comparison.svg",
     featured: "English comparison article for practical tool selection.",
     background: "類似ツールが増え、比較記事の価値が高まっていた。",
@@ -246,7 +246,7 @@ export const portfolioItems: PortfolioItem[] = [
     medium: "Medium",
     summary:
       "英語圏向けに、AI workflow assistant のユースケースと導入メリットを整理したPR記事。",
-    externalUrl: "https://medium.com/@example/workflow-pr",
+    externalUrl: "https://medium.com/@oliver_wood/workflow-pr",
     thumbnail: "/portfolio/pr.svg",
     featured: "English sponsored article with clear, low-hype positioning.",
     background: "英語圏での紹介記事に過度な宣伝感を出したくなかった。",

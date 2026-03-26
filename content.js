@@ -1,4 +1,4 @@
-﻿window.PORTFOLIO_CONTENT = {
+window.PORTFOLIO_CONTENT = {
   site: {
     name: "S",
     initial: "S",
@@ -81,7 +81,7 @@
           "A review-driven article built around product consolidation, pricing clarity, and reader-first evaluation criteria for an AI tool buyer.",
         tags: ["AI review", "English", "Medium"],
         takeaway: "Shows how I can frame a tool review around decision-making, not just features.",
-        url: "https://medium.com/@johnpascualkumar077/i-replaced-three-ai-subscriptions-with-just-one-my-hix-ai-review-6ba87db45689",
+        url: "https://medium.com/@oliver_wood/i-replaced-three-ai-subscriptions-with-just-one-my-hix-ai-review-6ba87db45689",
       },
       {
         label: "Japanese sample",
@@ -143,7 +143,7 @@
     links: [
       {
         label: "Medium profile",
-        url: "https://medium.com/@johnpascualkumar077",
+        url: "https://medium.com/@oliver_wood",
       },
       {
         label: "note profile",
