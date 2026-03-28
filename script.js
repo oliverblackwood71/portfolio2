@@ -88,11 +88,11 @@
               ${item.tags.map((tag) => `<span>${tag}</span>`).join("")}
             </div>
             <div class="work-meta">
-              <strong>Why it matters</strong>
+              <strong>${item.metaLabel || "Why it matters"}</strong>
               <p>${item.takeaway}</p>
             </div>
             <a class="card-link" href="${item.url}" target="_blank" rel="noreferrer">
-              Open sample
+              ${item.ctaLabel || "Open sample"}
               <span aria-hidden="true">↗</span>
             </a>
           </article>
@@ -103,7 +103,7 @@
 
   setHtml(
     "#additional-sample",
-    `${content.work.additionalSampleLabel}: <a href="${content.work.additionalSampleUrl}" target="_blank" rel="noreferrer">Open additional note sample</a>`
+    `${content.work.additionalSampleLabel}: <a href="${content.work.additionalSampleUrl}" target="_blank" rel="noreferrer">${content.work.additionalSampleCtaLabel || "Open additional sample"}</a>`
   );
 
   setHtml(

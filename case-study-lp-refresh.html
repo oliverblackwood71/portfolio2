@@ -1,0 +1,189 @@
+﻿<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ケーススタディ | クリニックLPの反応改善サンプル</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .case-wrap {
+        padding: 4rem 0 5rem;
+      }
+
+      .case-hero {
+        display: grid;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .case-hero p,
+      .case-section p,
+      .case-section li,
+      .case-box p {
+        color: var(--muted);
+      }
+
+      .case-title {
+        margin: 0;
+        font-family: "Newsreader", Georgia, serif;
+        font-size: clamp(2.4rem, 5vw, 4.2rem);
+        line-height: 1.04;
+        letter-spacing: -0.03em;
+      }
+
+      .case-grid,
+      .before-after {
+        display: grid;
+        gap: 1.2rem;
+      }
+
+      .case-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        margin-bottom: 2.5rem;
+      }
+
+      .case-box,
+      .case-section,
+      .before-card {
+        padding: 1.5rem;
+        border-radius: var(--radius-medium);
+        background: rgba(255, 255, 255, 0.78);
+        border: 1px solid var(--line);
+        box-shadow: var(--shadow-card);
+      }
+
+      .case-box h2,
+      .case-section h2,
+      .before-card h2 {
+        margin: 0 0 0.7rem;
+        font-size: 1.15rem;
+      }
+
+      .before-after {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-bottom: 2rem;
+      }
+
+      .before-card.before {
+        background: #fff7f4;
+      }
+
+      .before-card.after {
+        background: #eef8f6;
+      }
+
+      .mini-list {
+        margin: 0;
+        padding-left: 1.1rem;
+      }
+
+      .back-link {
+        display: inline-flex;
+        margin-bottom: 1.25rem;
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .case-cta {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-top: 1.8rem;
+      }
+
+      @media (max-width: 860px) {
+        .case-grid,
+        .before-after {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="case-wrap">
+      <div class="shell">
+        <a class="back-link" href="index.html">← ポートフォリオに戻る</a>
+
+        <section class="case-hero">
+          <p class="eyebrow">Case Study</p>
+          <h1 class="case-title">クリニックLPの反応改善サンプル</h1>
+          <p>
+            「誰向けのサービスかが一瞬で伝わらない」「問い合わせボタンが弱い」「信頼要素が下に埋もれている」という想定課題に対して、
+            LPの情報順とCTA導線を整理したサンプルです。
+          </p>
+        </section>
+
+        <section class="case-grid" aria-label="Project summary">
+          <article class="case-box">
+            <h2>想定課題</h2>
+            <p>広告流入はあるが、ファーストビューでの離脱が多く、問い合わせ率が伸びない。</p>
+          </article>
+          <article class="case-box">
+            <h2>改善方針</h2>
+            <p>誰向けか、何が変わるか、なぜ信頼できるかを上から順に伝える構成に組み直す。</p>
+          </article>
+          <article class="case-box">
+            <h2>想定成果</h2>
+            <p>CTAの迷いを減らし、問い合わせまでの心理的負荷を下げる。</p>
+          </article>
+        </section>
+
+        <section class="before-after" aria-label="Before and after">
+          <article class="before-card before">
+            <h2>Before</h2>
+            <ul class="mini-list">
+              <li>見出しが抽象的で、誰向けか分かりにくい</li>
+              <li>CTAが本文に埋もれていて押しどころが弱い</li>
+              <li>実績や症例、医師情報が下にあり安心感が遅い</li>
+              <li>スマホで文字密度が高く、流し読みしにくい</li>
+            </ul>
+          </article>
+          <article class="before-card after">
+            <h2>After</h2>
+            <ul class="mini-list">
+              <li>冒頭で対象読者と得られる変化を明確にする</li>
+              <li>ファーストビュー直下に相談CTAを配置する</li>
+              <li>症例、医師情報、選ばれる理由を上に引き上げる</li>
+              <li>スマホ前提で余白と情報のかたまりを整理する</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="case-section">
+          <h2>改善で触るポイント</h2>
+          <ul class="mini-list">
+            <li>ファーストビューのコピーとCTAの再設計</li>
+            <li>信頼要素の配置見直し</li>
+            <li>問い合わせまでの導線整理</li>
+            <li>SP表示での読みやすさ調整</li>
+            <li>Figmaでの改善モック作成</li>
+          </ul>
+        </section>
+
+        <section class="case-section">
+          <h2>このサンプルで見せたいこと</h2>
+          <p>
+            見た目を派手にするより、何をどの順番で見せるかを変えるほうが効く案件は多いです。この見本では、LP改善を
+            「デザイン」ではなく「反応を上げるための情報設計」として扱う姿勢を伝えることを目的にしています。
+          </p>
+        </section>
+
+        <section class="case-section">
+          <h2>対応範囲</h2>
+          <p>現状確認、改善方針整理、Figma作成、必要に応じた実装まで対応できます。</p>
+          <div class="case-cta">
+            <a class="button button-primary" href="mailto:oliverblackwood717@gmail.com?subject=LP%20or%20UI%20improvement%20inquiry">メールで相談する</a>
+            <a class="button button-secondary" href="index.html#services">サービスを見る</a>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
