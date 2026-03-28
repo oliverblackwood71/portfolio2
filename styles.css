@@ -1,16 +1,16 @@
 ﻿:root {
-  --bg: #f4f0e8;
+  --bg: #f2f7f8;
   --surface: #ffffff;
-  --surface-muted: #ede6da;
-  --surface-strong: #133738;
-  --ink: #162124;
-  --muted: #5f676d;
-  --line: rgba(22, 33, 36, 0.14);
-  --accent: #1d5452;
-  --accent-strong: #133b3b;
-  --accent-soft: #e2efed;
-  --shadow-soft: 0 18px 48px rgba(12, 25, 28, 0.08);
-  --shadow-card: 0 12px 28px rgba(12, 25, 28, 0.06);
+  --surface-muted: #eaf3f4;
+  --surface-strong: #173f4d;
+  --ink: #142328;
+  --muted: #5b6872;
+  --line: rgba(20, 35, 40, 0.12);
+  --accent: #2a7e83;
+  --accent-strong: #1f5f6a;
+  --accent-soft: #dff2f1;
+  --shadow-soft: 0 20px 54px rgba(19, 53, 62, 0.08);
+  --shadow-card: 0 14px 32px rgba(19, 53, 62, 0.08);
   --radius-large: 28px;
   --radius-medium: 20px;
   --radius-small: 14px;
@@ -32,8 +32,9 @@ body {
   font-family: "Public Sans", "Segoe UI", sans-serif;
   color: var(--ink);
   background:
-    radial-gradient(circle at top right, rgba(29, 84, 82, 0.09), transparent 26%),
-    linear-gradient(180deg, var(--bg) 0%, #faf8f3 22%, #ffffff 50%, #f8f6f1 100%);
+    radial-gradient(circle at top left, rgba(42, 126, 131, 0.12), transparent 28%),
+    radial-gradient(circle at top right, rgba(140, 208, 200, 0.18), transparent 22%),
+    linear-gradient(180deg, #f7fbfc 0%, var(--bg) 18%, #ffffff 52%, #f5fafb 100%);
   line-height: 1.6;
 }
 
@@ -70,8 +71,8 @@ a {
   top: 0;
   z-index: 20;
   backdrop-filter: blur(14px);
-  background: rgba(248, 246, 241, 0.84);
-  border-bottom: 1px solid rgba(22, 33, 36, 0.08);
+  background: rgba(247, 251, 252, 0.84);
+  border-bottom: 1px solid rgba(20, 35, 40, 0.07);
 }
 
 .header-row,
@@ -174,7 +175,7 @@ a {
 }
 
 .button-secondary {
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.86);
   color: var(--ink);
   border-color: var(--line);
 }
@@ -195,7 +196,7 @@ a {
 }
 
 .hero {
-  padding: 5.5rem 0 3rem;
+  padding: 5.6rem 0 3.4rem;
 }
 
 .hero-grid,
@@ -206,7 +207,7 @@ a {
 }
 
 .hero-grid {
-  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.9fr);
+  grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.92fr);
   align-items: start;
 }
 
@@ -234,8 +235,8 @@ a {
 }
 
 .hero-title {
-  max-width: 13ch;
-  font-size: clamp(3rem, 5vw, 5.2rem);
+  max-width: 11ch;
+  font-size: clamp(3rem, 5vw, 5rem);
 }
 
 .hero-summary,
@@ -252,9 +253,9 @@ a {
 }
 
 .hero-summary {
-  max-width: 42rem;
+  max-width: 38rem;
   margin: 1.4rem 0 0;
-  font-size: 1.08rem;
+  font-size: 1.04rem;
 }
 
 .hero-actions {
@@ -285,7 +286,7 @@ a {
 .contact-links a {
   border-radius: 999px;
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.62);
+  background: rgba(255, 255, 255, 0.82);
 }
 
 .hero-badges li,
@@ -299,14 +300,14 @@ a {
 .work-card,
 .service-card,
 .reason-card {
-  background: rgba(255, 255, 255, 0.88);
-  border: 1px solid rgba(22, 33, 36, 0.1);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(20, 35, 40, 0.08);
   border-radius: var(--radius-large);
   box-shadow: var(--shadow-soft);
 }
 
 .hero-panel {
-  padding: 1.6rem;
+  padding: 1.75rem;
 }
 
 .panel-kicker {
@@ -327,7 +328,7 @@ a {
 }
 
 .hero-list li {
-  padding: 0.95rem 1rem;
+  padding: 1rem 1.05rem;
   border-radius: var(--radius-small);
   background: var(--surface-muted);
   color: var(--ink);
@@ -343,8 +344,8 @@ a {
 }
 
 .section-tinted {
-  background: rgba(237, 230, 218, 0.46);
-  border-block: 1px solid rgba(22, 33, 36, 0.07);
+  background: rgba(231, 241, 243, 0.55);
+  border-block: 1px solid rgba(20, 35, 40, 0.05);
 }
 
 .section-heading {
@@ -363,7 +364,7 @@ a {
 .card-grid {
   display: grid;
   gap: 1.25rem;
-  margin-top: 2rem;
+  margin-top: 2.1rem;
 }
 
 .service-grid {
@@ -371,7 +372,7 @@ a {
 }
 
 .work-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: minmax(320px, 420px);
 }
 
 .reason-grid {
@@ -381,7 +382,7 @@ a {
 .service-card,
 .work-card,
 .reason-card {
-  padding: 1.45rem;
+  padding: 1.55rem;
 }
 
 .card-label {
@@ -425,11 +426,11 @@ a {
   grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
   gap: 1.5rem;
   align-items: start;
-  padding: 1.5rem;
+  padding: 1.6rem;
   margin-top: 1.5rem;
-  border: 1px solid rgba(22, 33, 36, 0.08);
+  border: 1px solid rgba(20, 35, 40, 0.07);
   border-radius: var(--radius-large);
-  background: rgba(255, 255, 255, 0.58);
+  background: rgba(255, 255, 255, 0.72);
 }
 
 .work-card {
@@ -449,7 +450,8 @@ a {
   border-radius: 999px;
   border: 1px solid var(--line);
   font-size: 0.78rem;
-  color: var(--muted);
+  color: var(--accent-strong);
+  background: rgba(223, 242, 241, 0.5);
 }
 
 .work-meta {
@@ -525,8 +527,8 @@ a {
 .contact-actions {
   padding: 1.2rem;
   border-radius: calc(var(--radius-large) - 8px);
-  background: rgba(19, 55, 56, 0.06);
-  border: 1px solid rgba(22, 33, 36, 0.08);
+  background: rgba(42, 126, 131, 0.08);
+  border: 1px solid rgba(20, 35, 40, 0.06);
 }
 
 .contact-email {
@@ -567,15 +569,18 @@ a {
 }
 
 :focus-visible {
-  outline: 3px solid rgba(29, 84, 82, 0.28);
+  outline: 3px solid rgba(42, 126, 131, 0.26);
   outline-offset: 3px;
 }
 
 @media (max-width: 1040px) {
   .service-grid,
-  .work-grid,
   .reason-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .work-grid {
+    grid-template-columns: minmax(320px, 420px);
   }
 
   .reason-grid .reason-card:last-child {
